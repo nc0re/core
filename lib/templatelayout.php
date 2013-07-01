@@ -13,9 +13,9 @@ class OC_TemplateLayout extends OC_Template {
 		if( $renderas == 'user' ) {
 			parent::__construct( 'core', 'layout.user' );
 			if(in_array(OC_APP::getCurrentApp(), array('settings','admin', 'help'))!==false) {
-				$this->assign('bodyid', 'body-settings');
+				$this->assign('bodyclass', 'body-settings');
 			}else{
-				$this->assign('bodyid', 'body-user');
+				$this->assign('bodyclass', 'body-user');
 			}
 
 			// Update notification

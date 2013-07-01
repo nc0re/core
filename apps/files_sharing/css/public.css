@@ -2,7 +2,7 @@ body {
 	background:#ddd;
 }
 
-#header {
+.header {
 	background:#1d2d44;
 	box-shadow:0 0 10px rgba(0,0,0,.5), inset 0 -2px 10px #222;
 	height:2.5em;

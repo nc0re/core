@@ -33,15 +33,15 @@
 		<?php endforeach; ?>
 	</head>
 
-	<body id="<?php p($_['bodyid']);?>">
+	<body class="<?php p($_['bodyclass']);?>">
 	<div id="notification-container">
 		<div id="notification"></div>
 		<?php if ($_['updateAvailable']): ?>
 			<div id="update-notification" style="display: inline;"><a href="<?php print_unescaped($_['updateLink']); ?>"><?php p($l->t('%s is available. Get more information on how to update.', array($_['updateVersion']))); ?></a></div>
 		<?php endif; ?>
 	</div>
-	<header><div id="header">
-			<a href="<?php print_unescaped(link_to('', 'index.php')); ?>" title="" id="owncloud"><img class="svg"
+	<header><div class="header">
+			<a href="<?php print_unescaped(link_to('', 'index.php')); ?>" title="" class="owncloud"><img class="svg"
 				src="<?php print_unescaped(image_path('', 'logo-wide.svg')); ?>" alt="ownCloud" /></a>
 			<div id="logo-claim" style="display:none;"><?php p(OC_Defaults::getLogoClaim()); ?></div>
 			<ul id="settings" class="svg">
@@ -91,7 +91,7 @@
 			</ul>
 		</div></nav>
 
-		<div id="content-wrapper">
+		<div class="content-wrapper">
 			<div id="content">
 				<?php print_unescaped($_['content']); ?>
 			</div>

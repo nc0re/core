@@ -31,9 +31,9 @@
 		<?php endforeach; ?>
 	</head>
 
-	<body id="body-login">
+	<body class="body-login">
 		<div id="login">
-			<header><div id="header">
+			<header><div class="header">
 				<img src="<?php print_unescaped(image_path('', 'logo.svg')); ?>" class="svg" alt="ownCloud" />
 				<div id="logo-claim" style="display:none;"><?php p(OC_Defaults::getLogoClaim()); ?></div>
 			</div></header>
